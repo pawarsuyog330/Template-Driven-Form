@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'templateForm';
+  submit(form:any){
+    var firstName = form.firstName;
+    console.log(firstName);
+  
+    var lastName = form.lastName;
+    console.log(lastName);
+  
+    var comment = form.comment;
+    console.log(comment);
+  }
 }
